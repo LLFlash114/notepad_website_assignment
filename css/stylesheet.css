@@ -24,3 +24,30 @@ h3 {
 li {
     color: #2c7390;
 }
+
+button {
+    border: 0;
+    line-height: 2.7;
+    padding: 0 13px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+.new_note_button {
+    background-color: #5394A0;
+}
+
+.theme_button {
+    background-color: #6F6A87;
+}
+
+.save_button {
+    background-color: #5394A0;
+}
+
+.cancel_button {
+    background-color: #D9827C;
+}
