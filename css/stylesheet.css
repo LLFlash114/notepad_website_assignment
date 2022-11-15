@@ -7,9 +7,23 @@ body {
 } 
 
 footer {
+    margin-top: 70px;
+}
+
+/* .footer {
+    display: flex;
+    justify-content: center;
+}
+ */
+
+.test {
     text-align: center;
 }
 
+.images {
+    display: flex;
+    justify-content: center;
+}
 
 
 .main-container {
@@ -92,6 +106,7 @@ h2 {
 h3 {
     color: #2c7390;
     font-family: 'Space Mono', monospace;
+    text-align: center;
 }
 
 li {
