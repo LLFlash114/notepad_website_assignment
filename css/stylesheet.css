@@ -29,8 +29,23 @@ footer {
 
 .menu ul li {
     list-style: none;
-    padding: 10px;
+    padding: 6px;
+    margin: 5px;
 }
+
+.main-text-area {
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 96%;
+    height: 245px;
+    resize: none;
+}
+
+.button-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 /* aside {
     width: 20%;
@@ -94,6 +109,7 @@ button {
 .button-1 {
     display: flex;
     justify-content: space-between;
+    margin: 20px;
 }
 
 .new_note_button {
