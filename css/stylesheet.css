@@ -39,6 +39,9 @@ footer {
     width: 96%;
     height: 245px;
     resize: none;
+    border: 3px solid #85b0eb;
+    border-radius: 3px;
+    background-color: #faf4ed;
 }
 
 .button-2 {
