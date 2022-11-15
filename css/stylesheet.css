@@ -7,8 +7,11 @@ body {
     height: 100%;
 } 
 
+
+
 .main-container {
     display: flex;
+    height: 90vh;
 }
 
 .header-main {
@@ -35,6 +38,7 @@ body {
 } */
 aside {
     background-color: #faf4ed;
+    width: 20%;
     
 }
 
