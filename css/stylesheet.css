@@ -2,12 +2,14 @@ body {
     background-color: #f2e9dd;
     margin: 0;
     padding: 0;
+    overflow: hidden;
     box-sizing: border-box;
-    width: 100%;
 } 
 
 footer {
-    margin-top: 70px;
+    /* margin-top: 70px; */
+    overflow: hidden;
+    bottom: 0;
 }
 
 /* .footer {
@@ -28,7 +30,10 @@ footer {
 
 .main-container {
     display: flex;
-    height: 90vh;
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 .header-main {
@@ -65,6 +70,9 @@ footer {
     gap: 15px;
 }
 
+.notes-bullets li{
+    font-size: 25px;
+}
 
 /* aside {
     width: 20%;
