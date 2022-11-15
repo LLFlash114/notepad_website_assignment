@@ -3,74 +3,12 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
+    overflow: hidden;
     
 } 
 
-
-.main-container {
-    
-}
-
-
-
-
-.main-text-area {
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 93%;
-    height: 245px;
-    resize: none; 
-    border: 3px solid #85b0eb;
-    border-radius: 3px;
-    background-color: #faf4ed;
-}
-
-.button-2 {
-    display: flex;
-    justify-content: flex-end;
-    margin: 10px;
-    gap: 10px;
-}
-
-
 aside {
     background-color: #faf4ed;
-    /* width: 20%; */
-    
-}
-
-.notes-bullets {
-    display: flex;
-    gap: 80px;
-}
-
-.notes-bullets li {
-    font-size: 20px;
-}
-
-.menu ul {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-right: 45px;
-}
-
-.menu ul li {
-    list-style: none;
-}
-
-.button-1 {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-
-.images {
-    display: flex;
-    justify-content: center;
 }
 
 h1 {
@@ -78,15 +16,12 @@ h1 {
     font-family: 'Space Mono', monospace;
     text-align: center;
     font-size: 25px;
-    
 }
 
 h2 {
     color: #2c7390;
     font-family: 'Space Mono', monospace;
     text-align: center;
-    /* text-align: center;
-    font-size: 30px; */
 }
 
 h3 {
@@ -98,7 +33,6 @@ h3 {
 li {
     color: #2c7390;
     list-style-type: square;
-    /* font-size: 18px; */
 }
 
 button {
@@ -112,7 +46,59 @@ button {
     
 }
 
+/* The text box area the user will input text */
+.main-text-area {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 94.1%;
+    height: 245px;
+    resize: none; 
+    border: 3px solid #85b0eb;
+    border-radius: 3px;
+    background-color: #faf4ed;
+}
 
+/* The aside that has tabs of notes */
+.notes-bullets {
+    display: flex;
+    gap: 80px;
+}
+
+.notes-bullets li {
+    font-size: 20px;
+}
+
+/* The header tabs which include About and Doc */
+.menu ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-right: 45px;
+    margin-top: 40px;
+}
+
+.menu ul li {
+    list-style: none;
+}
+
+/* First set of buttons, New Note and Dark Theme */
+.button-1 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+/* Second set of buttons, Save and Cancel */ 
+.button-2 {
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px;
+    gap: 10px;
+}
+
+/* Colors for all the buttons */
 .new_note_button {
     background-color: #5394A0;
 }
@@ -129,6 +115,15 @@ button {
     background-color: #D9827C;
 }
 
+/* Image Logos for Linkedin and the Web */  
+.images {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Media queries */
+
 
 
 @media screen and (min-width: 600px) {
@@ -137,8 +132,30 @@ button {
     } 
     
     footer {
-        /* margin-top: 70px; */
         overflow: hidden;
+    }
+    
+    aside {
+        width: 20%;
+    }
+    
+    h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    
+    li {
+        font-size: 18px;
+    }
+    
+    button {
+        line-height: 2.7;
+        padding: 0 13px;
+        font-size: 1rem;
     }
     
     .main-container {
@@ -166,13 +183,9 @@ button {
     .main-text-area {
         margin-left: 20px;
         margin-right: 20px;
-        width: 96%;
+        width: 95.8%;
     }
-    
-    .button-2 {
-        margin: 20px;
-        gap: 15px;
-    }
+
     .notes-bullets{
         flex-direction: column;
         gap: 0;
@@ -182,48 +195,20 @@ button {
     
     }
 
-    aside {
-        width: 20%;
-    }
-    
-    h1 {
-        font-size: 30px;
-    }
-    
-    h2 {
-        font-size: 30px;
-    }
-    
-    
-    li {
-        font-size: 18px;
-    }
-    
-    button {
-        line-height: 2.7;
-        padding: 0 13px;
-        font-size: 1rem;
-    }
-    
     .button-1 {
         display: flex;
         margin: 20px;
         margin-top: 25px;
         margin-bottom: 25px;
     }
+
+    .button-2 {
+        margin: 20px;
+        gap: 15px;
+    }
+    
     
     
 }
 
 
-/* header{
-    display: flex;
-} */
-
-/* aside {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 100%;
-    position: fixed;
-} */
