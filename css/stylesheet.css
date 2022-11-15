@@ -1,57 +1,48 @@
-/* body {
-    background-color: #f2e9dd;
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    display: flex;
-} */
 body {
+    background-color: #f2e9dd;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
-    /* flex-flow: wrap; */
+} 
+
+.main-container {
+    display: flex;
 }
 
-aside {
+.header-main {
+    flex-grow: 1;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: flex-end;
+
+
+}
+
+/* aside {
     width: 20%;
     height: 100%;
     background-color: red;
     display: inline-flex;
 
-}
-
-
+} */
 
 /* header{
     width: 80%;
 } */
-/* aside {
+aside {
     background-color: #faf4ed;
-    display: inline-flex;
-    flex-direction: column;
-    width: 20%;
-} */
-
-.menu ul{
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    justify-content:flex-end;
-
+    
 }
 
-.menu a{
-    padding: 5px;
-    display: inline-block;
-}
-
-article {
+/* article {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 3;
-}
+} */
 
 h1 {
     color: #2c7390;
@@ -82,6 +73,11 @@ button {
     color: #fff;
     border-radius: 10px;
     
+}
+
+.button-1 {
+    display: flex;
+    justify-content: space-between;
 }
 
 .new_note_button {
