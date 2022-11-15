@@ -24,8 +24,12 @@ footer {
 .menu ul {
     display: flex;
     justify-content: flex-end;
+    list-style: none;
+}
 
-
+.menu ul li {
+    list-style: none;
+    padding: 10px;
 }
 
 /* aside {
