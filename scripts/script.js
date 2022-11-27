@@ -8,10 +8,11 @@ function darkTheme () {
     const aside = document.querySelector("aside");
     const textArea = document.querySelector("textarea");
     const buttons = document.querySelectorAll("button"); 
-    aside.classList.add("dark-sidebar");
+    aside.classList.add("dark-aside");
     textArea.classList.add("dark-textarea");
-    buttons.classList.add("dark-buttons");
-
+    for (let item of buttons) {
+        item.classList.add("dark-buttons")
+    } 
 }
 
 btn.addEventListener('click', darkTheme);

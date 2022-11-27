@@ -123,14 +123,14 @@ button {
 
 
 /* Javascript CSS */
-.dark_aside {
+.dark-aside {
     background-color: black;
 }
-.dark_textarea{
+.dark-textarea{
     background-color: black;
 }
 
-.dark_buttons{
+.dark-buttons{
     background-color: black;
 }
 /* Media queries */
