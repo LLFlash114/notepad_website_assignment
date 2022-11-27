@@ -4,6 +4,8 @@ console.log("Beginning Javascript ");
 const themeButton = document.querySelector(".theme_button");
 const cancelButton = document.querySelector(".cancel_button");
 const textArea = document.querySelector("textarea");
+const saveCancelButtons = document.querySelector(".button-2")
+const newNoteButton = document.querySelector(".new_note_button")
 
 // Makes the background colors of the sidebar, textarea container, buttons, darker and text should be updated to "Light Theme" // 
 function darkTheme () {
@@ -23,10 +25,15 @@ function darkTheme () {
 
 // Hides the save button, cancel button, and textarea //
 function cancel () {
-    const saveCancelButtons = document.querySelector(".button-2")
     saveCancelButtons.style.visibility = "hidden"
     textArea.style.visibility = "hidden"
 }
+// Makes the save button, cancel button, and textarea visible again //
+function newNote () {
+    saveCancelButtons.style.visibility = "visible"
+    textArea.style.visibility = "visible"
+}
 
 themeButton.addEventListener('click', darkTheme);
-cancelButton.addEventListener('click', cancel)
+cancelButton.addEventListener('click', cancel);
+newNoteButton.addEventListener('click', newNote);
