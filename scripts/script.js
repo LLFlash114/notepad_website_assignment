@@ -41,11 +41,10 @@ function newNote1 () {
     }
 }
 
-let userNotes = {
-    title:"note one",
-    body:"this is my first note"
-}
-
+let notesArray = [
+    {title:"note one", body:"this is my first note"},
+    {title:"note two", body:"this is my first note"},
+]
 themeButton.addEventListener('click', darkTheme);
 cancelButton.addEventListener('click', cancel);
 newNoteButton.addEventListener('click', newNote);
