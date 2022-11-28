@@ -41,6 +41,11 @@ function newNote1 () {
     }
 }
 
+let userNotes = {
+    title:"note one",
+    body:"this is my first note"
+}
+
 themeButton.addEventListener('click', darkTheme);
 cancelButton.addEventListener('click', cancel);
 newNoteButton.addEventListener('click', newNote);
