@@ -49,7 +49,16 @@ let notesArray = [
 
 function saveNote () {
     if (textArea.value != "" && textArea.value != "This is a placeholder" ) {
-        prompt("Enter note title: ")
+        let noteText = textArea.value
+        let noteTitle = prompt("Enter note title: ")
+        if (noteTitle === null) {
+            return
+        } else {
+            notesArray.push({title: noteTitle, body: noteText});
+            console.log(notesArray)
+        }
+        
+
 
     }
 }
