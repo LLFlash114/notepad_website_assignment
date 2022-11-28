@@ -30,10 +30,18 @@ function cancel () {
 }
 // Makes the save button, cancel button, and textarea visible again //
 function newNote () {
-    saveCancelButtons.style.visibility = "visible"
-    textArea.style.visibility = "visible"
+    saveCancelButtons.style.visibility = "visible";
+    textArea.style.visibility = "visible";
+    let treat = true 
+}
+
+function newNote1 () {
+    if (treat = true) {
+        textArea.value = ""
+    }
 }
 
 themeButton.addEventListener('click', darkTheme);
 cancelButton.addEventListener('click', cancel);
 newNoteButton.addEventListener('click', newNote);
+newNoteButton.addEventListener('click', newNote1);
