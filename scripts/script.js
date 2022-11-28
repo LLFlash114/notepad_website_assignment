@@ -7,6 +7,7 @@ const textArea = document.querySelector("textarea");
 const saveCancelButtons = document.querySelector(".button-2")
 const newNoteButton = document.querySelector(".new_note_button")
 const saveButton = document.querySelector(".save_button")
+const notesList = document.querySelector(".notes-bullets")
 
 // Makes the background colors of the sidebar, textarea container, buttons, darker and text should be updated to "Light Theme" // 
 function darkTheme () {
@@ -56,6 +57,10 @@ function saveNote () {
         } else {
             notesArray.push({title: noteTitle, body: noteText});
             console.log(notesArray)
+            const newListNote = document.createElement("li")
+            newListNote.textContent = noteTitle
+            notesList.appendChild(newListNote)
+
         }
         
 
