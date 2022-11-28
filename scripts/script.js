@@ -6,6 +6,7 @@ const cancelButton = document.querySelector(".cancel_button");
 const textArea = document.querySelector("textarea");
 const saveCancelButtons = document.querySelector(".button-2")
 const newNoteButton = document.querySelector(".new_note_button")
+const saveButton = document.querySelector(".save_button")
 
 // Makes the background colors of the sidebar, textarea container, buttons, darker and text should be updated to "Light Theme" // 
 function darkTheme () {
@@ -45,7 +46,15 @@ let notesArray = [
     {title:"note one", body:"this is my first note"},
     {title:"note two", body:"this is my first note"},
 ]
+
+function saveNote () {
+    if (textArea.value != "" && textArea.value != "This is a placeholder" ) {
+        prompt("Enter note title: ")
+
+    }
+}
 themeButton.addEventListener('click', darkTheme);
 cancelButton.addEventListener('click', cancel);
 newNoteButton.addEventListener('click', newNote);
 newNoteButton.addEventListener('click', newNote1);
+saveButton.addEventListener('click', saveNote)
