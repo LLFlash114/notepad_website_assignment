@@ -149,10 +149,6 @@ button {
 
 
 @media screen and (min-width: 600px) {
-    body {
-        overflow: hidden;
-    } 
-    
     footer {
         overflow: hidden;
     }
@@ -168,7 +164,6 @@ button {
     h2 {
         font-size: 30px;
     }
-    
     
     li {
         font-size: 18px;
@@ -218,7 +213,6 @@ button {
     }
 
     .button-1 {
-        display: flex;
         margin: 20px;
         margin-top: 25px;
         margin-bottom: 25px;
