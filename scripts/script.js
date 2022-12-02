@@ -11,17 +11,21 @@ const buttons = document.querySelectorAll("button");
 const headerMain = document.querySelector(".header-main")
 const headerMainH1 = document.querySelector(".header-main h1")
 const bulletItems = document.querySelectorAll('li')
+const footerH3 = document.querySelector('footer h3')
 
 // Makes the background colors of the sidebar, textarea container, buttons, darker and text should be updated to "Light Theme" // 
 function darkTheme () {
     aside.classList.toggle("dark-theme");
     asideH2.classList.toggle("dark-theme-text");
-    // bulletItems.classList.toggle('dark-theme-text')
     textArea.classList.toggle("dark-theme");
     headerMain.classList.toggle('dark-theme-body')
     headerMainH1.classList.toggle('dark-theme-text')
+    footerH3.classList.toggle('dark-theme-text')
     for (let item of buttons) {
         item.classList.toggle("dark-theme-buttons");
+    }
+    for (let item of bulletItems) {
+        item.classList.toggle("dark-theme-text")
     }
     if(themeButton.textContent === "Dark Theme" ) {
         themeButton.textContent = "Light Theme"
@@ -78,6 +82,7 @@ function savedNoteEdit (event) {
     }
 }
 
+// Event listeners // 
 themeButton.addEventListener('click', darkTheme);
 cancelButton.addEventListener('click', cancel);
 newNoteButton.addEventListener('click', newNote);
