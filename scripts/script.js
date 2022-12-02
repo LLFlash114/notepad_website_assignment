@@ -6,14 +6,20 @@ const newNoteButton = document.querySelector(".new_note_button")
 const saveButton = document.querySelector(".save_button")
 const notesList = document.querySelector(".notes-bullets")
 const aside = document.querySelector("aside");
+const asideH2 = document.querySelector("aside h2");
 const buttons = document.querySelectorAll("button");
 const headerMain = document.querySelector(".header-main")
+const headerMainH1 = document.querySelector(".header-main h1")
+const bulletItems = document.querySelectorAll('li')
 
 // Makes the background colors of the sidebar, textarea container, buttons, darker and text should be updated to "Light Theme" // 
 function darkTheme () {
     aside.classList.toggle("dark-theme");
+    asideH2.classList.toggle("dark-theme-text");
+    // bulletItems.classList.toggle('dark-theme-text')
     textArea.classList.toggle("dark-theme");
     headerMain.classList.toggle('dark-theme-body')
+    headerMainH1.classList.toggle('dark-theme-text')
     for (let item of buttons) {
         item.classList.toggle("dark-theme-buttons");
     }
@@ -29,6 +35,7 @@ function cancel () {
     saveCancelButtons.style.visibility = "hidden"
     textArea.style.visibility = "hidden"
 }
+
 // Makes the save button, cancel button, and textarea visible again //
 function newNote () {
     saveCancelButtons.style.visibility = "visible";

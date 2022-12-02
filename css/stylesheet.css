@@ -99,7 +99,7 @@ button {
 }
 
 /* Colors for all the buttons */
-.save-and-new-buttons {
+.new_note_button, .save_button {
     background-color: #5394A0;
 }
 
@@ -119,12 +119,10 @@ button {
 
 
 /* Javascript CSS */
-/* .dark-text {
+
+.dark-theme-text {
     color: white;
-} */
-/* .dark-aside {
-    background-color: black;
-} */
+}
 .dark-theme-body {
     background-color: #303841;
 }
@@ -135,14 +133,6 @@ button {
 .dark-theme-buttons {
     background-color: #8E05C2;
 }
-
-/* .dark-buttons{
-    background-color: black;
-    color: white;
-} */
-/* Media queries */
-
-
 
 @media screen and (min-width: 600px) {
     footer {
