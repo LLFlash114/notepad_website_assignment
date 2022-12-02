@@ -7,13 +7,15 @@ const saveButton = document.querySelector(".save_button")
 const notesList = document.querySelector(".notes-bullets")
 const aside = document.querySelector("aside");
 const buttons = document.querySelectorAll("button");
+const headerMain = document.querySelector(".header-main")
 
 // Makes the background colors of the sidebar, textarea container, buttons, darker and text should be updated to "Light Theme" // 
 function darkTheme () {
-    aside.classList.toggle("dark-aside");
-    textArea.classList.toggle("dark-textarea");
+    aside.classList.toggle("dark-theme");
+    textArea.classList.toggle("dark-theme");
+    headerMain.classList.toggle('dark-theme-body')
     for (let item of buttons) {
-        item.classList.toggle("dark-buttons");
+        item.classList.toggle("dark-theme-buttons");
     }
     if(themeButton.textContent === "Dark Theme" ) {
         themeButton.textContent = "Light Theme"

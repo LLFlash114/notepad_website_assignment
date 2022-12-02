@@ -123,16 +123,27 @@ button {
 
 
 /* Javascript CSS */
-.dark-aside {
+/* .dark-text {
+    color: white;
+} */
+/* .dark-aside {
     background-color: black;
+} */
+.dark-theme-body {
+    background-color: #303841;
 }
-.dark-textarea{
-    background-color: black;
+.dark-theme{
+    background-color: #3A4750;
+    color: white;
+}
+.dark-theme-buttons {
+    background-color: #8E05C2;
 }
 
-.dark-buttons{
+/* .dark-buttons{
     background-color: black;
-}
+    color: white;
+} */
 /* Media queries */
 
 
