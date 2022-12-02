@@ -99,16 +99,12 @@ button {
 }
 
 /* Colors for all the buttons */
-.new_note_button {
+.save-and-new-buttons {
     background-color: #5394A0;
 }
 
 .theme_button {
     background-color: #6F6A87;
-}
-
-.save_button {
-    background-color: #5394A0;
 }
 
 .cancel_button {
