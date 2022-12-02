@@ -52,7 +52,7 @@ function saveNote () {
     if (textArea.value != "" && textArea.value != "This is a placeholder" ) {
         let noteText = textArea.value
         let noteTitle = prompt("Enter note title: ")
-        if (noteTitle === null) {
+        if (noteTitle === null || noteTitle === "") {
             return
         } else {
             notesArray.push({title: noteTitle, body: noteText});
@@ -61,14 +61,22 @@ function saveNote () {
             newListNote.textContent = noteTitle
             notesList.appendChild(newListNote)
 
+
+        }        
+    }
+}
+
+function savedNoteEdit (event) {
+    for (let note of notesArray) {
+        if (i.title == event.target.textContent) {
+            textArea.value = note.body;
+
         }
-        
-
-
     }
 }
 themeButton.addEventListener('click', darkTheme);
 cancelButton.addEventListener('click', cancel);
 newNoteButton.addEventListener('click', newNote);
 newNoteButton.addEventListener('click', newNote1);
-saveButton.addEventListener('click', saveNote)
+saveButton.addEventListener('click', saveNote);
+notesList.addEventListener('click', savedNoteEdit);
